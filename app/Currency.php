@@ -27,8 +27,8 @@ enum Currency :string
     {
         return match ($this) {
             self::RUB => 1,
-            self::USD => 1 / 90,
-            self::EUR => 1 / 100,
+            self::USD => 90,
+            self::EUR => 100,
         };
     }
 

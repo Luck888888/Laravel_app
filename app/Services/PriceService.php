@@ -35,7 +35,7 @@ class PriceService
      */
     public function formatPrice(float $price, Currency $currency): string
     {
-        $converted = $price * $currency->rate();
+        $converted = $price / $currency->rate();
         $symbol = $currency->symbol();
 
         return match ($currency) {
